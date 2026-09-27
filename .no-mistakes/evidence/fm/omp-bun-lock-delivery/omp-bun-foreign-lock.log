@@ -1,0 +1,6 @@
+Live OMP foreign-holder check
+
+Observed a live Bun OMP process owning the lab lock (pid 81981).
+Unrelated fm-lock response: error: another live firstmate session holds the lock (pid 81981); operate read-only until resolved
+Lock byte comparison before/after acquisition attempt: identical.
+Owner liveness check during refusal: passed. OMP later exited on its own after RPC stdin EOF.
